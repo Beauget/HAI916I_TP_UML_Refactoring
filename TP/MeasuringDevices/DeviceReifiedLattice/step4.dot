@@ -1,0 +1,101 @@
+digraph G { 
+	rankdir=BT;
+subgraph Kclass { 
+label="Kclass";
+1 [shape=record,label="{Concept_Kclass_1|exist_hasAttribute(C_Kattribute_13)\n|}"];
+37 [shape=record,label="{Concept_Kclass_37|exist_hasAttribute(C_Kattribute_14)\nexist_hasRole(C_Krole_27)\n|RainGauge\n}"];
+38 [shape=record,label="{Concept_Kclass_38|exist_hasAttribute(C_Kattribute_15)\nexist_hasRole(C_Krole_28)\nexist_hasOperation(C_Koperation_34)\n|}"];
+39 [shape=record,label="{Concept_Kclass_39|exist_hasAttribute(C_Kattribute_16)\nexist_hasAttribute(C_Kattribute_17)\nexist_hasRole(C_Krole_29)\n|Anemometer\n}"];
+40 [shape=record,label="{Concept_Kclass_40|exist_hasAttribute(C_Kattribute_18)\nexist_hasAttribute(C_Kattribute_19)\nexist_hasOperation(C_Koperation_32)\n|}"];
+41 [shape=record,label="{Concept_Kclass_41|exist_hasAttribute(C_Kattribute_20)\nexist_hasAttribute(C_Kattribute_24)\nexist_hasOperation(C_Koperation_33)\n|Rainfall\n}"];
+42 [shape=record,label="{Concept_Kclass_42|exist_hasAttribute(C_Kattribute_21)\nexist_hasAttribute(C_Kattribute_22)\nexist_hasAttribute(C_Kattribute_25)\nexist_hasOperation(C_Koperation_35)\n|Wind\n}"];
+43 [shape=record,label="{Concept_Kclass_43|exist_hasAttribute(C_Kattribute_23)\nexist_hasRole(C_Krole_30)\nexist_hasOperation(C_Koperation_36)\n|RainReport\n}"];
+44 [shape=record,label="{Concept_Kclass_44|exist_hasRole(C_Krole_26)\n|}"];
+45 [shape=record,label="{Concept_Kclass_45|exist_hasOperation(C_Koperation_31)\n|}"];
+47 [shape=record,label="{Concept_Kclass_47|exist_hasRole(C_Krole_46)\n|}"];
+	44 -> 1
+	45 -> 1
+	38 -> 37
+	38 -> 39
+	41 -> 40
+	42 -> 40
+	38 -> 41
+	38 -> 42
+	38 -> 43
+	39 -> 44
+	47 -> 44
+	40 -> 45
+	43 -> 45
+	37 -> 47
+	43 -> 47
+}
+subgraph Kattribute { 
+label="Kattribute";
+13 [shape=record,label="{Concept_Kattribute_13||}"];
+14 [shape=record,label="{Concept_Kattribute_14|tubeHeight\n|RG::tubeHeight\n}"];
+15 [shape=record,label="{Concept_Kattribute_15||}"];
+16 [shape=record,label="{Concept_Kattribute_16|measureInterval\n|A::measureInterval\n}"];
+17 [shape=record,label="{Concept_Kattribute_17|precision\n|A::precision\n}"];
+18 [shape=record,label="{Concept_Kattribute_18|measuringDate\n|R::measuringDate\nW::measuringDate\n}"];
+19 [shape=record,label="{Concept_Kattribute_19|codeQuality\nnumber\n|}"];
+20 [shape=record,label="{Concept_Kattribute_20|waterAmount\n|R::waterAmount\n}"];
+21 [shape=record,label="{Concept_Kattribute_21|windStrength\n|W::windStrength\n}"];
+22 [shape=record,label="{Concept_Kattribute_22|windDirection\n|W::windDirection\n}"];
+23 [shape=record,label="{Concept_Kattribute_23|period\n|RR::period\n}"];
+24 [shape=record,label="{Concept_Kattribute_24|int\n|R::codeQuality\n}"];
+25 [shape=record,label="{Concept_Kattribute_25|real\n|W::codeQuality\n}"];
+	14 -> 13
+	16 -> 13
+	17 -> 13
+	18 -> 13
+	19 -> 13
+	20 -> 13
+	21 -> 13
+	22 -> 13
+	23 -> 13
+	15 -> 14
+	15 -> 16
+	15 -> 17
+	15 -> 18
+	24 -> 19
+	25 -> 19
+	15 -> 20
+	15 -> 21
+	15 -> 22
+	15 -> 23
+	15 -> 24
+	15 -> 25
+}
+subgraph Krole { 
+label="Krole";
+26 [shape=record,label="{Concept_Krole_26|exist_hasTypeEnd(C_Kclass_1)\nexist_hasTypeEnd(C_Kclass_40)\nexist_hasTypeEnd(C_Kclass_45)\n|}"];
+27 [shape=record,label="{Concept_Krole_27|measuredRainfall\n|RG::measuredRainfall\n}"];
+28 [shape=record,label="{Concept_Krole_28|exist_hasTypeEnd(C_Kclass_37)\nexist_hasTypeEnd(C_Kclass_38)\nexist_hasTypeEnd(C_Kclass_39)\nexist_hasTypeEnd(C_Kclass_43)\nexist_hasTypeEnd(C_Kclass_44)\nexist_hasTypeEnd(C_Kclass_47)\n|}"];
+29 [shape=record,label="{Concept_Krole_29|measuredWind\nexist_hasTypeEnd(C_Kclass_42)\n|A::measuredWind\n}"];
+30 [shape=record,label="{Concept_Krole_30|storedRainfall\n|RR::storedRainfall\n}"];
+46 [shape=record,label="{Concept_Krole_46|exist_hasTypeEnd(C_Kclass_41)\n|}"];
+	29 -> 26
+	46 -> 26
+	28 -> 27
+	28 -> 29
+	28 -> 30
+	27 -> 46
+	30 -> 46
+}
+subgraph Koperation { 
+label="Koperation";
+31 [shape=record,label="{Concept_Koperation_31|print\n|}"];
+32 [shape=record,label="{Concept_Koperation_32|MC\n|}"];
+33 [shape=record,label="{Concept_Koperation_33|MCWA\n|R::printinfo\n}"];
+34 [shape=record,label="{Concept_Koperation_34||}"];
+35 [shape=record,label="{Concept_Koperation_35|MCWSWD\n|W::printinfo\n}"];
+36 [shape=record,label="{Concept_Koperation_36|PstoredRF\n|RR::print\n}"];
+	32 -> 31
+	36 -> 31
+	33 -> 32
+	35 -> 32
+	34 -> 33
+	34 -> 35
+	34 -> 36
+}
+}

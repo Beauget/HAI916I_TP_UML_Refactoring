@@ -29,3 +29,225 @@ ctx Kclass computed.
 Kclass: step=2 nb.concepts=9 nb.attrib rel.=0
 
 time:2 ms
+
+$ java -jar fca4j-cli-light-0.4.1.jar RCA ./MeasuringDevices/deviceReified.rcft ./MeasuringDevices/DeviceReifie
+dLattice -v -a ADD_EXTENT
+execute ADD_EXTENT
+computing ctx Kclass 5x0 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole 3x3 .
+ctx Krole computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=1 nb.concepts=1 nb.attrib rel.=0
+
+Kattribute: step=1 nb.concepts=13 nb.attrib rel.=0
+
+Krole: step=1 nb.concepts=5 nb.attrib rel.=0
+
+Koperation: step=1 nb.concepts=6 nb.attrib rel.=0
+
+time:25 ms
+
+ctx Kclass : 5 entities, 24 attributes
+ctx Kattribute : 11 entities, 12 attributes
+ctx Krole : 3 entities, 4 attributes
+ctx Koperation : 3 entities, 5 attributes
+contexts extended (0s )
+computing ctx Kclass 5x24 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole 3x4 .
+ctx Krole computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=2 nb.concepts=10 nb.attrib rel.=24
+
+Kattribute: step=2 nb.concepts=13 nb.attrib rel.=0
+
+Krole: step=2 nb.concepts=5 nb.attrib rel.=1
+
+Koperation: step=2 nb.concepts=6 nb.attrib rel.=0
+
+time:17 ms
+
+ctx Kclass : 5 entities, 24 attributes
+ctx Kattribute : 11 entities, 12 attributes
+ctx Krole : 3 entities, 13 attributes
+ctx Koperation : 3 entities, 5 attributes
+contexts extended (0s )
+computing ctx Kclass 5x24 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole 3x13 .
+ctx Krole computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=3 nb.concepts=10 nb.attrib rel.=24
+
+Kattribute: step=3 nb.concepts=13 nb.attrib rel.=0
+
+Krole: step=3 nb.concepts=6 nb.attrib rel.=10
+
+Koperation: step=3 nb.concepts=6 nb.attrib rel.=0
+
+time:10 ms
+
+ctx Kclass : 5 entities, 25 attributes
+ctx Kattribute : 11 entities, 12 attributes
+ctx Krole : 3 entities, 13 attributes
+ctx Koperation : 3 entities, 5 attributes
+contexts extended (0s )
+computing ctx Kclass 5x25 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole 3x13 .
+ctx Krole computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=4 nb.concepts=11 nb.attrib rel.=25
+
+Kattribute: step=4 nb.concepts=13 nb.attrib rel.=0
+
+Krole: step=4 nb.concepts=6 nb.attrib rel.=10
+
+Koperation: step=4 nb.concepts=6 nb.attrib rel.=0
+
+time:14 ms
+
+ctx Kclass : 5 entities, 25 attributes
+ctx Kattribute : 11 entities, 12 attributes
+ctx Krole : 3 entities, 14 attributes
+ctx Koperation : 3 entities, 5 attributes
+contexts extended (0s )
+computing ctx Kclass 5x25 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole 3x14 .
+ctx Krole computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=5 nb.concepts=11 nb.attrib rel.=25
+
+Kattribute: step=5 nb.concepts=13 nb.attrib rel.=0
+
+Krole: step=5 nb.concepts=6 nb.attrib rel.=11
+
+Koperation: step=5 nb.concepts=6 nb.attrib rel.=0
+
+time:14 ms
+
+$ java -jar fca4j-cli-light-0.4.1.jar RCA ./MeasuringDevices/deviceSeparated.rcft ./MeasuringDevices/DeviceSepa
+ratedLattice -v -a ADD_EXTENT
+execute ADD_EXTENT
+computing ctx Kclass 5x0 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole1 2x2 .
+ctx Krole1 computed.
+computing ctx Krole2 1x1 .
+ctx Krole2 computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=1 nb.concepts=1 nb.attrib rel.=0
+
+Kattribute: step=1 nb.concepts=13 nb.attrib rel.=0
+
+Krole1: step=1 nb.concepts=4 nb.attrib rel.=0
+
+Krole2: step=1 nb.concepts=1 nb.attrib rel.=0
+
+Koperation: step=1 nb.concepts=6 nb.attrib rel.=0
+
+time:19 ms
+
+ctx Kclass : 5 entities, 24 attributes
+ctx Kattribute : 11 entities, 12 attributes
+ctx Krole1 : 2 entities, 3 attributes
+ctx Krole2 : 1 entities, 2 attributes
+ctx Koperation : 3 entities, 5 attributes
+contexts extended (0s )
+computing ctx Kclass 5x24 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole1 2x3 .
+ctx Krole1 computed.
+computing ctx Krole2 1x2 .
+ctx Krole2 computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=2 nb.concepts=10 nb.attrib rel.=24
+
+Kattribute: step=2 nb.concepts=13 nb.attrib rel.=0
+
+Krole1: step=2 nb.concepts=4 nb.attrib rel.=1
+
+Krole2: step=2 nb.concepts=1 nb.attrib rel.=1
+
+Koperation: step=2 nb.concepts=6 nb.attrib rel.=0
+
+time:12 ms
+
+ctx Kclass : 5 entities, 24 attributes
+ctx Kattribute : 11 entities, 12 attributes
+ctx Krole1 : 2 entities, 12 attributes
+ctx Krole2 : 1 entities, 11 attributes
+ctx Koperation : 3 entities, 5 attributes
+contexts extended (0s )
+computing ctx Kclass 5x24 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole1 2x12 .
+ctx Krole1 computed.
+computing ctx Krole2 1x11 .
+ctx Krole2 computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=3 nb.concepts=10 nb.attrib rel.=24
+
+Kattribute: step=3 nb.concepts=13 nb.attrib rel.=0
+
+Krole1: step=3 nb.concepts=4 nb.attrib rel.=10
+
+Krole2: step=3 nb.concepts=2 nb.attrib rel.=10
+
+Koperation: step=3 nb.concepts=6 nb.attrib rel.=0
+
+time:10 ms
+
+ctx Kclass : 5 entities, 25 attributes
+ctx Kattribute : 11 entities, 12 attributes
+ctx Krole1 : 2 entities, 12 attributes
+ctx Krole2 : 1 entities, 11 attributes
+ctx Koperation : 3 entities, 5 attributes
+contexts extended (0s )
+computing ctx Kclass 5x25 .
+ctx Kclass computed.
+computing ctx Kattribute 11x12 .
+ctx Kattribute computed.
+computing ctx Krole1 2x12 .
+ctx Krole1 computed.
+computing ctx Krole2 1x11 .
+ctx Krole2 computed.
+computing ctx Koperation 3x5 .
+ctx Koperation computed.
+Kclass: step=4 nb.concepts=10 nb.attrib rel.=25
+
+Kattribute: step=4 nb.concepts=13 nb.attrib rel.=0
+
+Krole1: step=4 nb.concepts=4 nb.attrib rel.=10
+
+Krole2: step=4 nb.concepts=2 nb.attrib rel.=10
+
+Koperation: step=4 nb.concepts=6 nb.attrib rel.=0
+
+time:12 ms
