@@ -1,0 +1,24 @@
+$ java -jar fca4j-cli-light-0.4.1.jar RCA ./Drones/dronefleet.rcft ./Drones/Lattices -v -a ADD_EXTENT
+execute ADD_EXTENT
+computing ctx Drone 8x9 .
+ctx Drone computed.
+computing ctx DroneFleet 5x9 .
+ctx DroneFleet computed.
+Drone: step=1 nb.concepts=13 nb.attrib rel.=0
+
+DroneFleet: step=1 nb.concepts=9 nb.attrib rel.=0
+
+time:17 ms
+
+ctx Drone : 8 entities, 9 attributes
+ctx DroneFleet : 5 entities, 22 attributes
+contexts extended (0s )
+computing ctx Drone 8x9 .
+ctx Drone computed.
+computing ctx DroneFleet 5x22 .
+ctx DroneFleet computed.
+Drone: step=2 nb.concepts=13 nb.attrib rel.=0
+
+DroneFleet: step=2 nb.concepts=9 nb.attrib rel.=13
+
+time:6 ms
