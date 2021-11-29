@@ -1,0 +1,31 @@
+$ java -jar fca4j-cli-light-0.4.1.jar RCA ./MeasuringDevices/deviceFlat.rcft ./MeasuringDevices/DeviceFlatLattice -v -a ADD_EXTENT
+execute ADD_EXTENT
+computing ctx Kclass 5x14 .
+ctx Kclass computed.
+Kclass: step=1 nb.concepts=8 nb.attrib rel.=0
+
+time:32 ms
+
+ctx Kclass : 5 entities, 14 attributes
+contexts extended (0s )
+computing ctx Kclass 5x14 .
+ctx Kclass computed.
+Kclass: step=2 nb.concepts=8 nb.attrib rel.=0
+
+time:2 ms
+
+$ java -jar fca4j-cli-light-0.4.1.jar RCA ./MeasuringDevices/deviceHierarchical.rcft ./MeasuringDevices/DeviceHierarchicalLattice -v -a ADD_EXTENT
+execute ADD_EXTENT
+computing ctx Kclass 5x19 .
+ctx Kclass computed.
+Kclass: step=1 nb.concepts=9 nb.attrib rel.=0
+
+time:14 ms
+
+ctx Kclass : 5 entities, 19 attributes
+contexts extended (0s )
+computing ctx Kclass 5x19 .
+ctx Kclass computed.
+Kclass: step=2 nb.concepts=9 nb.attrib rel.=0
+
+time:2 ms

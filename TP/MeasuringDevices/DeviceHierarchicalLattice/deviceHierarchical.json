@@ -1,0 +1,150 @@
+[
+{
+"attributes": {},
+"children": [
+10,
+12,
+17
+],
+"context": "Kclass",
+"id": 9,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"print": "abstract"
+},
+"children": [
+13,
+16
+],
+"context": "Kclass",
+"id": 17,
+"objects": [],
+"parents": [
+9
+]
+},
+{
+"attributes": {
+"codeQuality:number": "codeQuality:number",
+"measuringDate": "measuringDate",
+"printInfo": "MC"
+},
+"children": [
+14,
+15
+],
+"context": "Kclass",
+"id": 13,
+"objects": [],
+"parents": [
+17
+]
+},
+{
+"attributes": {
+"period": "period",
+"print": "PS",
+"storedRainfall": "storedRainfall"
+},
+"children": [
+11
+],
+"context": "Kclass",
+"id": 16,
+"objects": [
+"RainReport"
+],
+"parents": [
+17
+]
+},
+{
+"attributes": {
+"codeQuality:real": "codeQuality:real",
+"printInfo": "MCWSWD",
+"windDirection": "windDirection",
+"windStrength": "windStrength"
+},
+"children": [
+11
+],
+"context": "Kclass",
+"id": 15,
+"objects": [
+"Wind"
+],
+"parents": [
+13
+]
+},
+{
+"attributes": {
+"codeQuality:int": "codeQuality:int",
+"printInfo": "MCWA",
+"waterAmount": "waterAmount"
+},
+"children": [
+11
+],
+"context": "Kclass",
+"id": 14,
+"objects": [
+"Rainfall"
+],
+"parents": [
+13
+]
+},
+{
+"attributes": {
+"measureInterval": "measureInterval",
+"measuredWind": "measuredWind",
+"precision": "precision"
+},
+"children": [
+11
+],
+"context": "Kclass",
+"id": 12,
+"objects": [
+"Anemometer"
+],
+"parents": [
+9
+]
+},
+{
+"attributes": {
+"measuredRainfall": "measuredRainfall",
+"tubeHeight": "tubeHeight"
+},
+"children": [
+11
+],
+"context": "Kclass",
+"id": 10,
+"objects": [
+"RainGauge"
+],
+"parents": [
+9
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Kclass",
+"id": 11,
+"objects": [],
+"parents": [
+10,
+12,
+14,
+15,
+16
+]
+}
+]

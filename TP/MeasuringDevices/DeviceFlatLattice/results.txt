@@ -1,0 +1,5 @@
+Kclass: step=1 nb.concepts=8 nb.attrib rel.=0
+time:32 ms
+Kclass: step=2 nb.concepts=8 nb.attrib rel.=0
+time:2 ms
+total time: 78

@@ -1,0 +1,25 @@
+digraph G { 
+	rankdir=BT;
+subgraph Kclass { 
+label="Kclass";
+8 [shape=record,label="{Concept_Kclass_8||}"];
+9 [shape=record,label="{Concept_Kclass_9|tubeHeight\nmeasuredRainfall\n|RainGauge\n}"];
+10 [shape=record,label="{Concept_Kclass_10||}"];
+11 [shape=record,label="{Concept_Kclass_11|measureInterval\nprecision\nmeasuredWind\n|Anemometer\n}"];
+12 [shape=record,label="{Concept_Kclass_12|measuringDate\ncodeQuality\nprintInfo\n|}"];
+13 [shape=record,label="{Concept_Kclass_13|waterAmount\n|Rainfall\n}"];
+14 [shape=record,label="{Concept_Kclass_14|windStrength\nwindDirection\n|Wind\n}"];
+15 [shape=record,label="{Concept_Kclass_15|period\nstoredRainfall\nprint\n|RainReport\n}"];
+	9 -> 8
+	11 -> 8
+	12 -> 8
+	15 -> 8
+	10 -> 9
+	10 -> 11
+	13 -> 12
+	14 -> 12
+	10 -> 13
+	10 -> 14
+	10 -> 15
+}
+}

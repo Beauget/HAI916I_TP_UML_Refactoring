@@ -1,0 +1,132 @@
+[
+{
+"attributes": {},
+"children": [
+9,
+11,
+12,
+15
+],
+"context": "Kclass",
+"id": 8,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"codeQuality": "codeQuality",
+"measuringDate": "measuringDate",
+"printInfo": "printInfo"
+},
+"children": [
+13,
+14
+],
+"context": "Kclass",
+"id": 12,
+"objects": [],
+"parents": [
+8
+]
+},
+{
+"attributes": {
+"period": "period",
+"print": "print",
+"storedRainfall": "storedRainfall"
+},
+"children": [
+10
+],
+"context": "Kclass",
+"id": 15,
+"objects": [
+"RainReport"
+],
+"parents": [
+8
+]
+},
+{
+"attributes": {
+"windDirection": "windDirection",
+"windStrength": "windStrength"
+},
+"children": [
+10
+],
+"context": "Kclass",
+"id": 14,
+"objects": [
+"Wind"
+],
+"parents": [
+12
+]
+},
+{
+"attributes": {
+"waterAmount": "waterAmount"
+},
+"children": [
+10
+],
+"context": "Kclass",
+"id": 13,
+"objects": [
+"Rainfall"
+],
+"parents": [
+12
+]
+},
+{
+"attributes": {
+"measureInterval": "measureInterval",
+"measuredWind": "measuredWind",
+"precision": "precision"
+},
+"children": [
+10
+],
+"context": "Kclass",
+"id": 11,
+"objects": [
+"Anemometer"
+],
+"parents": [
+8
+]
+},
+{
+"attributes": {
+"measuredRainfall": "measuredRainfall",
+"tubeHeight": "tubeHeight"
+},
+"children": [
+10
+],
+"context": "Kclass",
+"id": 9,
+"objects": [
+"RainGauge"
+],
+"parents": [
+8
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "Kclass",
+"id": 10,
+"objects": [],
+"parents": [
+9,
+11,
+13,
+14,
+15
+]
+}
+]
