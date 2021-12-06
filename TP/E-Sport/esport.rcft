@@ -56,3 +56,13 @@ scaling org.rcaexplore.scaling.ExistentialScaling
 |JoueurBelge 		| |x| |
 |TournoiRLCS 		| | | |
 |TournoiLCS 		| | | |
+
+RelationalContext hasOperation
+source Kclass
+target Koperation
+scaling org.rcaexplore.scaling.ExistentialScaling
+|	    |JF::classement|JB::classement|TR::classement|TL::classement|
+|JoueurFrançais 	|x| | | |
+|JoueurBelge 		| |x| | |
+|TournoiRLCS 		| | |x| |
+|TournoiLCS 		| | | |x|
