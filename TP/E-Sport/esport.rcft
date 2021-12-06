@@ -28,7 +28,7 @@ FormalContext Krole
 |	|tournoiRLCS|tournoiLCS|
 |JF::tournoiRLCS 	|x| |
 |JF::tournoiLCS 	| |x|
-|JB::tournoiRLCS 	|x| |
+|JB::tournoiLCS 	|x| |
 
 FormalContext Koperation
 |	|classement|classementJoueur|classementTournoi|
@@ -51,7 +51,7 @@ RelationalContext hasRole
 source Kclass
 target Krole
 scaling org.rcaexplore.scaling.ExistentialScaling
-|	|JF::tournoiRLCS|JF::tournoiLCS|JB::tournoiRLCS|
+|	|JF::tournoiRLCS|JF::tournoiLCS|JB::tournoiLCS|
 |JoueurFrançais 	|x|x| |
 |JoueurBelge 		| |x| |
 |TournoiRLCS 		| | | |
@@ -61,8 +61,17 @@ RelationalContext hasOperation
 source Kclass
 target Koperation
 scaling org.rcaexplore.scaling.ExistentialScaling
-|	    |JF::classement|JB::classement|TR::classement|TL::classement|
+|	|JF::classement|JB::classement|TR::classement|TL::classement|
 |JoueurFrançais 	|x| | | |
 |JoueurBelge 		| |x| | |
 |TournoiRLCS 		| | |x| |
 |TournoiLCS 		| | | |x|
+
+RelationalContext hasTypeEnd 
+source Krole
+target Kclass
+scaling org.rcaexplore.scaling.ExistentialScaling
+|	|JoueurFrançais|JoueurBelge|TournoiRLCS|TournoiLCS|
+|JF::tournoiRLCS 	| | |x| |
+|JF::tournoiLCS 	| | | |x|
+|JB::tournoiLCS 	| | | |x|
