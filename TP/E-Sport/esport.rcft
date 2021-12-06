@@ -24,13 +24,11 @@ FormalContext Kattribute
 |TL::cashPrice 			| | | | | | |x| | | |x| |
 |TL::classementTournoi 	| | | | | | | |x| | | |x|
 
-
 FormalContext Krole
 |	|tournoiRLCS|tournoiLCS||
 |JF::tournoiRLCS 	|x| |
 |JF::tournoiLCS 	| |x|
 |JB::tournoiRLCS 	|x| |
-
 
 FormalContext Koperation
 |	|classement|classementJoueur|classementTournoi|
@@ -46,3 +44,14 @@ scaling org.rcaexplore.scaling.ExistentialScaling
 |JoueurBelge 		| | | |x|x|x| | | | | | | | | | |
 |TournoiRLCS 		| | | | | | |x|x|x|x|x| | | | | |
 |TournoiLCS 		| | | | | | | | | | | |x|x|x|x|x|
+
+RelationalContext hasRole
+source Kclass
+target Krole
+scaling org.rcaexplore.scaling.ExistentialScaling
+|	|JF::tournoiRLCS|JF::tournoiLCS|JB::tournoiRLCS|
+|JoueurFrançais 	|x|x| |
+|JoueurBelge 		| |x| |
+|TournoiRLCS 		| | | |
+|TournoiLCS 		| | | |
+
