@@ -26,8 +26,14 @@ FormalContext Kattribute
 
 
 FormalContext Krole
-| |tournoiRLCS|tournoiLCS||
+|	|tournoiRLCS|tournoiLCS||
 |JF::tournoiRLCS 	|x| |
 |JF::tournoiLCS 	| |x|
 |JB::tournoiRLCS 	|x| |
+
+
+FormalContext Koperation
+|	|classement|classementJoueur|classementTournoi|
+|JF::classement 	|x|x| |
+|TR::classement 	|x|x|x|
 
