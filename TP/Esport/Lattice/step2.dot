@@ -1,0 +1,64 @@
+digraph G { 
+	rankdir=BT;
+subgraph Kclass { 
+label="Kclass";
+1 [shape=record,label="{Concept_Kclass_1|exist_hasAttribute(C_Kattribute_11)\nexist_hasAttribute(C_Kattribute_21)\nexist_hasOperation(C_Koperation_26)\n|}"];
+28 [shape=record,label="{Concept_Kclass_28|exist_hasAttribute(C_Kattribute_12)\nexist_hasAttribute(C_Kattribute_14)\nexist_hasAttribute(C_Kattribute_15)\nexist_hasRole(C_Krole_22)\nexist_hasRole(C_Krole_25)\n|JoueurBelge\n}"];
+29 [shape=record,label="{Concept_Kclass_29|exist_hasAttribute(C_Kattribute_13)\nexist_hasRole(C_Krole_24)\n|}"];
+30 [shape=record,label="{Concept_Kclass_30|exist_hasAttribute(C_Kattribute_16)\nexist_hasAttribute(C_Kattribute_17)\nexist_hasAttribute(C_Kattribute_18)\nexist_hasAttribute(C_Kattribute_19)\nexist_hasAttribute(C_Kattribute_20)\nexist_hasOperation(C_Koperation_27)\n|TournoiRLCS\nTournoiLCS\n}"];
+31 [shape=record,label="{Concept_Kclass_31|exist_hasRole(C_Krole_23)\n|JoueurFrançais\n}"];
+	28 -> 1
+	30 -> 1
+	31 -> 28
+	29 -> 30
+	29 -> 31
+}
+subgraph Kattribute { 
+label="Kattribute";
+11 [shape=record,label="{Concept_Kattribute_11||}"];
+12 [shape=record,label="{Concept_Kattribute_12|pseudo\n|JF::pseudo\nJB::pseudo\n}"];
+13 [shape=record,label="{Concept_Kattribute_13||}"];
+14 [shape=record,label="{Concept_Kattribute_14|age\n|JF::age\nJB::age\n}"];
+15 [shape=record,label="{Concept_Kattribute_15|classement\nint\n|JF::classement\nJB::classement\n}"];
+16 [shape=record,label="{Concept_Kattribute_16|name\n|TR::name\nTL::name\n}"];
+17 [shape=record,label="{Concept_Kattribute_17|localisation\n|TR::localisation\nTL::localisation\n}"];
+18 [shape=record,label="{Concept_Kattribute_18|annee\n|TR::annee\nTL::annee\n}"];
+19 [shape=record,label="{Concept_Kattribute_19|cashPrice\nfloat\n|TR::cashPrice\nTL::cashPrice\n}"];
+20 [shape=record,label="{Concept_Kattribute_20|classementTournoi\nMap<>\n|TR::classementTournoi\nTL::classementTournoi\n}"];
+21 [shape=record,label="{Concept_Kattribute_21|String\n|}"];
+	15 -> 11
+	19 -> 11
+	20 -> 11
+	21 -> 11
+	13 -> 12
+	13 -> 14
+	13 -> 15
+	13 -> 16
+	13 -> 17
+	13 -> 18
+	13 -> 19
+	13 -> 20
+	12 -> 21
+	14 -> 21
+	16 -> 21
+	17 -> 21
+	18 -> 21
+}
+subgraph Krole { 
+label="Krole";
+22 [shape=record,label="{Concept_Krole_22|exist_hasTypeEnd(C_Kclass_1)\nexist_hasTypeEnd(C_Kclass_30)\n|}"];
+23 [shape=record,label="{Concept_Krole_23|tournoiRLCS\n|JF::tournoiRLCS\nJB::tournoiLCS\n}"];
+24 [shape=record,label="{Concept_Krole_24|exist_hasTypeEnd(C_Kclass_28)\nexist_hasTypeEnd(C_Kclass_29)\nexist_hasTypeEnd(C_Kclass_31)\n|}"];
+25 [shape=record,label="{Concept_Krole_25|tournoiLCS\n|JF::tournoiLCS\n}"];
+	23 -> 22
+	25 -> 22
+	24 -> 23
+	24 -> 25
+}
+subgraph Koperation { 
+label="Koperation";
+26 [shape=record,label="{Concept_Koperation_26|classement\nclassementJoueur\n|JF::classement\nJB::classement\n}"];
+27 [shape=record,label="{Concept_Koperation_27|classementTournoi\n|TR::classement\nTL::classement\n}"];
+	27 -> 26
+}
+}

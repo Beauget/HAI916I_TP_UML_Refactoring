@@ -1,0 +1,65 @@
+$ java -jar fca4j-cli-light-0.4.1.jar RCA ./Esport/esport.rcft ./Esport/Lattice -v -a ADD_EXTENT
+execute ADD_EXTENT
+computing ctx Kclass 4x0 .
+ctx Kclass computed.
+computing ctx Kattribute 16x12 .
+ctx Kattribute computed.
+computing ctx Krole 3x2 .
+ctx Krole computed.
+computing ctx Koperation 4x3 .
+ctx Koperation computed.
+Kclass: step=1 nb.concepts=1 nb.attrib rel.=0
+
+Kattribute: step=1 nb.concepts=11 nb.attrib rel.=0
+
+Krole: step=1 nb.concepts=4 nb.attrib rel.=0
+
+Koperation: step=1 nb.concepts=2 nb.attrib rel.=0
+
+time:16 ms
+
+ctx Kclass : 4 entities, 17 attributes
+ctx Kattribute : 16 entities, 12 attributes
+ctx Krole : 3 entities, 3 attributes
+ctx Koperation : 4 entities, 3 attributes
+contexts extended (0s )
+computing ctx Kclass 4x17 .
+ctx Kclass computed.
+computing ctx Kattribute 16x12 .
+ctx Kattribute computed.
+computing ctx Krole 3x3 .
+ctx Krole computed.
+computing ctx Koperation 4x3 .
+ctx Koperation computed.
+Kclass: step=2 nb.concepts=5 nb.attrib rel.=17
+
+Kattribute: step=2 nb.concepts=11 nb.attrib rel.=0
+
+Krole: step=2 nb.concepts=4 nb.attrib rel.=1
+
+Koperation: step=2 nb.concepts=2 nb.attrib rel.=0
+
+time:6 ms
+
+ctx Kclass : 4 entities, 17 attributes
+ctx Kattribute : 16 entities, 12 attributes
+ctx Krole : 3 entities, 7 attributes
+ctx Koperation : 4 entities, 3 attributes
+contexts extended (0s )
+computing ctx Kclass 4x17 .
+ctx Kclass computed.
+computing ctx Kattribute 16x12 .
+ctx Kattribute computed.
+computing ctx Krole 3x7 .
+ctx Krole computed.
+computing ctx Koperation 4x3 .
+ctx Koperation computed.
+Kclass: step=3 nb.concepts=5 nb.attrib rel.=17
+
+Kattribute: step=3 nb.concepts=11 nb.attrib rel.=0
+
+Krole: step=3 nb.concepts=4 nb.attrib rel.=5
+
+Koperation: step=3 nb.concepts=2 nb.attrib rel.=0
+
+time:4 ms
