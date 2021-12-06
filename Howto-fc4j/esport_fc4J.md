@@ -28,7 +28,7 @@ java -jar fca4j-cli.jar RCA ./Esport/esport.rcft ./Esport/Lattice -v -a ADD_EXTE
 	- [esport.json](../TP/Esport/Lattice/esport.json) that can be used to navigate the lattices with RCAviz (http://rcaviz.lirmm.fr/).
 	- [step2.dot](../TP/Esport/Lattice/step2.dot) which contains the set of connected lattices (the Relational Lattice Family). 
 	- several `.txt` files containing metrics (step, number of concepts and relational attributes)
-- To produce a pdf view of the lattice, we can use Graphviz (https://graphviz.org/) 
+- To produce [a pdf view](../TP/Esport/step2.pdf) of the lattice, we can use Graphviz (https://graphviz.org/) 
 
 ```bash
 dot -Tpdf ./Esport/Lattice/step2.dot -o ./Esport/step2.pdf
