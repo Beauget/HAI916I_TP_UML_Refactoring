@@ -33,7 +33,9 @@ FormalContext Krole
 FormalContext Koperation
 |	|classement|classementJoueur|classementTournoi|
 |JF::classement 	|x|x| |
+|JB::classement 	|x|x| |
 |TR::classement 	|x|x|x|
+|TL::classement 	|x|x|x|
 
 RelationalContext hasAttribute
 source Kclass
@@ -54,4 +56,3 @@ scaling org.rcaexplore.scaling.ExistentialScaling
 |JoueurBelge 		| |x| |
 |TournoiRLCS 		| | | |
 |TournoiLCS 		| | | |
-
