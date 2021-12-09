@@ -7,29 +7,29 @@ FormalContext Kclass
 
 FormalContext Kattribute
 |	|pseudo|age|classement|name|localisation|annee|cashPrice|classementTournoiFr|classementTournoiBe|String|int|float|Map-Int-Fr|Map-Int-Be|Map-Int-Obj|number|
-|JF::pseudo 			|x| | | | | | | | |x| | | | | | |
-|JF::age 				| |x| | | | | | | |x| | | | | | |
-|JF::classement 		| | |x| | | | | | | |x| | | | |x|
-|JB::pseudo 			|x| | | | | | | | |x| | | | | | |
-|JB::age 				| |x| | | | | | | |x| | | | | | |
-|JB::classement 		| | |x| | | | | | | |x| | | | |x|
-|TR::name 				| | | |x| | | | | |x| | | | | | |
-|TR::localisation 		| | | | |x| | | | |x| | | | | | |
-|TR::annee 				| | | | | |x| | | |x| | | | | | |
-|TR::cashPrice 			| | | | | | |x| | | | |x| | | |x|
-|TR::classementTournoi 	| | | | | | | |x| | | | |x| |x| |
-|TL::name 				| | | |x| | | | | |x| | | | | | |
-|TL::localisation 		| | | | |x| | | | |x| | | | | | |
-|TL::annee 				| | | | | |x| | | |x| | | | | | |
-|TL::cashPrice 			| | | | | | |x| | | | |x| | | |x|
+|JF::pseudo 				|x| | | | | | | | |x| | | | | | |
+|JF::age 					| |x| | | | | | | |x| | | | | | |
+|JF::classement 			| | |x| | | | | | | |x| | | | |x|
+|JB::pseudo 				|x| | | | | | | | |x| | | | | | |
+|JB::age 					| |x| | | | | | | |x| | | | | | |
+|JB::classement 			| | |x| | | | | | | |x| | | | |x|
+|TR::name 					| | | |x| | | | | |x| | | | | | |
+|TR::localisation 			| | | | |x| | | | |x| | | | | | |
+|TR::annee 					| | | | | |x| | | |x| | | | | | |
+|TR::cashPrice 				| | | | | | |x| | | | |x| | | |x|
+|TR::classementTournoi 		| | | | | | | |x| | | | |x| |x| |
+|TL::name 					| | | |x| | | | | |x| | | | | | |
+|TL::localisation 			| | | | |x| | | | |x| | | | | | |
+|TL::annee 					| | | | | |x| | | |x| | | | | | |
+|TL::cashPrice 				| | | | | | |x| | | | |x| | | |x|
 |TL::classementTournoiFr 	| | | | | | | |x| | | | |x| |x| |
-|TL::classementTournoiBe 	| | | | | | | | |x| | | |x|x| |
+|TL::classementTournoiBe 	| | | | | | | | |x| | | | |x|x| |
 
 FormalContext Krole
 |	|tournoiRLCS|tournoiLCS|
 |JF::tournoiRLCS 	|x| |
 |JF::tournoiLCS 	| |x|
-|JB::tournoiLCS 	|x| |
+|JB::tournoiLCS 	| |x|
 
 FormalContext Koperation
 |	|classement|classementJoueur|classementTournoi|
