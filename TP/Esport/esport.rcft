@@ -6,23 +6,23 @@ FormalContext Kclass
 |TournoiLCS 	| 
 
 FormalContext Kattribute
-|	|pseudo|age|classement|name|localisation|annee|cashPrice|classementTournoi|String|int|float|Map<>|
-|JF::pseudo 			|x| | | | | | | |x| | | |
-|JF::age 				| |x| | | | | | |x| | | |
-|JF::classement 		| | |x| | | | | | |x| | |
-|JB::pseudo 			|x| | | | | | | |x| | | |
-|JB::age 				| |x| | | | | | |x| | | |
-|JB::classement 		| | |x| | | | | | |x| | |
-|TR::name 				| | | |x| | | | |x| | | |
-|TR::localisation 		| | | | |x| | | |x| | | |
-|TR::annee 				| | | | | |x| | |x| | | |
-|TR::cashPrice 			| | | | | | |x| | | |x| |
-|TR::classementTournoi 	| | | | | | | |x| | | |x|
-|TL::name 				| | | |x| | | | |x| | | |
-|TL::localisation 		| | | | |x| | | |x| | | |
-|TL::annee 				| | | | | |x| | |x| | | |
-|TL::cashPrice 			| | | | | | |x| | | |x| |
-|TL::classementTournoi 	| | | | | | | |x| | | |x|
+|	|pseudo|age|classement|name|localisation|annee|cashPrice|classementTournoi|String|int|float|Map|number|
+|JF::pseudo 			|x| | | | | | | |x| | | | |
+|JF::age 				| |x| | | | | | |x| | | | |
+|JF::classement 		| | |x| | | | | | |x| | |x|
+|JB::pseudo 			|x| | | | | | | |x| | | | |
+|JB::age 				| |x| | | | | | |x| | | | |
+|JB::classement 		| | |x| | | | | | |x| | |x|
+|TR::name 				| | | |x| | | | |x| | | | |
+|TR::localisation 		| | | | |x| | | |x| | | | |
+|TR::annee 				| | | | | |x| | |x| | | | |
+|TR::cashPrice 			| | | | | | |x| | | |x| |x|
+|TR::classementTournoi 	| | | | | | | |x| | | |x| |
+|TL::name 				| | | |x| | | | |x| | | | |
+|TL::localisation 		| | | | |x| | | |x| | | | |
+|TL::annee 				| | | | | |x| | |x| | | | |
+|TL::cashPrice 			| | | | | | |x| | | |x| |x|
+|TL::classementTournoi 	| | | | | | | |x| | | |x| |
 
 FormalContext Krole
 |	|tournoiRLCS|tournoiLCS|
