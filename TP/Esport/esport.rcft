@@ -42,11 +42,11 @@ RelationalContext hasAttribute
 source Kclass
 target Kattribute
 scaling org.rcaexplore.scaling.ExistentialScaling
-|	|JF::pseudo|JF::age|JF::classement|JB::pseudo|JB::age|JB::classement|TR::name|TR::localisation|TR::annee|TR::cashPrice|TR::classementTournoi|TL::name|TL::localisation|TL::annee|TL::cashPrice|TL::classementTournoi|
-|JoueurFrançais 	|x|x|x| | | | | | | | | | | | | |
-|JoueurBelge 		| | | |x|x|x| | | | | | | | | | |
-|TournoiRLCS 		| | | | | | |x|x|x|x|x| | | | | |
-|TournoiLCS 		| | | | | | | | | | | |x|x|x|x|x|
+|	|JF::pseudo|JF::age|JF::classement|JB::pseudo|JB::age|JB::classement|TR::name|TR::localisation|TR::annee|TR::cashPrice|TR::classementTournoi|TL::name|TL::localisation|TL::annee|TL::cashPrice|TL::classementTournoiFr|TL::classementTournoiBe|
+|JoueurFrançais 	|x|x|x| | | | | | | | | | | | | | |
+|JoueurBelge 		| | | |x|x|x| | | | | | | | | | | |
+|TournoiRLCS 		| | | | | | |x|x|x|x|x| | | | | | |
+|TournoiLCS 		| | | | | | | | | | | |x|x|x|x|x|x|
 
 RelationalContext hasRole
 source Kclass
