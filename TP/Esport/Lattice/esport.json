@@ -3,8 +3,9 @@
 "attributes": {
 "exist_hasAttribute": {
 "concepts": [
-11,
-21
+14,
+25,
+27
 ],
 "operator": "exist",
 "relation": "hasAttribute",
@@ -12,7 +13,7 @@
 },
 "exist_hasOperation": {
 "concepts": [
-26
+32
 ],
 "operator": "exist",
 "relation": "hasOperation",
@@ -20,8 +21,8 @@
 }
 },
 "children": [
-28,
-30
+34,
+36
 ],
 "context": "Kclass",
 "id": 1,
@@ -32,9 +33,9 @@
 "attributes": {
 "exist_hasAttribute": {
 "concepts": [
-12,
-14,
-15
+15,
+17,
+18
 ],
 "operator": "exist",
 "relation": "hasAttribute",
@@ -42,8 +43,8 @@
 },
 "exist_hasRole": {
 "concepts": [
-22,
-25
+28,
+31
 ],
 "operator": "exist",
 "relation": "hasRole",
@@ -51,10 +52,10 @@
 }
 },
 "children": [
-31
+38
 ],
 "context": "Kclass",
-"id": 28,
+"id": 34,
 "objects": [
 "JoueurBelge"
 ],
@@ -64,36 +65,14 @@
 },
 {
 "attributes": {
-"exist_hasRole": {
-"concepts": [
-23
-],
-"operator": "exist",
-"relation": "hasRole",
-"target": "Krole"
-}
-},
-"children": [
-29
-],
-"context": "Kclass",
-"id": 31,
-"objects": [
-"JoueurFrançais"
-],
-"parents": [
-28
-]
-},
-{
-"attributes": {
 "exist_hasAttribute": {
 "concepts": [
-16,
-17,
-18,
 19,
-20
+20,
+21,
+22,
+23,
+26
 ],
 "operator": "exist",
 "relation": "hasAttribute",
@@ -101,7 +80,7 @@
 },
 "exist_hasOperation": {
 "concepts": [
-27
+33
 ],
 "operator": "exist",
 "relation": "hasOperation",
@@ -109,13 +88,12 @@
 }
 },
 "children": [
-29
+37
 ],
 "context": "Kclass",
-"id": 30,
+"id": 36,
 "objects": [
-"TournoiRLCS",
-"TournoiLCS"
+"TournoiRLCS"
 ],
 "parents": [
 1
@@ -123,9 +101,55 @@
 },
 {
 "attributes": {
+"exist_hasRole": {
+"concepts": [
+29
+],
+"operator": "exist",
+"relation": "hasRole",
+"target": "Krole"
+}
+},
+"children": [
+35
+],
+"context": "Kclass",
+"id": 38,
+"objects": [
+"JoueurFrançais"
+],
+"parents": [
+34
+]
+},
+{
+"attributes": {
 "exist_hasAttribute": {
 "concepts": [
-13
+24
+],
+"operator": "exist",
+"relation": "hasAttribute",
+"target": "Kattribute"
+}
+},
+"children": [
+35
+],
+"context": "Kclass",
+"id": 37,
+"objects": [
+"TournoiLCS"
+],
+"parents": [
+36
+]
+},
+{
+"attributes": {
+"exist_hasAttribute": {
+"concepts": [
+16
 ],
 "operator": "exist",
 "relation": "hasAttribute",
@@ -133,7 +157,7 @@
 },
 "exist_hasRole": {
 "concepts": [
-24
+30
 ],
 "operator": "exist",
 "relation": "hasRole",
@@ -142,60 +166,106 @@
 },
 "children": [],
 "context": "Kclass",
-"id": 29,
+"id": 35,
 "objects": [],
 "parents": [
-30,
-31
+37,
+38
 ]
 },
 {
 "attributes": {},
 "children": [
-15,
-19,
-20,
-21
+25,
+26,
+27
 ],
 "context": "Kattribute",
-"id": 11,
+"id": 14,
 "objects": [],
 "parents": []
+},
+{
+"attributes": {
+"Map-Int-Obj": "Map-Int-Obj"
+},
+"children": [
+23,
+24
+],
+"context": "Kattribute",
+"id": 26,
+"objects": [],
+"parents": [
+14
+]
+},
+{
+"attributes": {
+"number": "number"
+},
+"children": [
+18,
+22
+],
+"context": "Kattribute",
+"id": 27,
+"objects": [],
+"parents": [
+14
+]
 },
 {
 "attributes": {
 "String": "String"
 },
 "children": [
-12,
-14,
-16,
+15,
 17,
-18
+19,
+20,
+21
 ],
 "context": "Kattribute",
-"id": 21,
+"id": 25,
 "objects": [],
 "parents": [
-11
+14
 ]
 },
 {
 "attributes": {
-"Map<>": "Map<>",
-"classementTournoi": "classementTournoi"
+"Map-Int-Be": "Map-Int-Be",
+"classementTournoiBe": "classementTournoiBe"
 },
 "children": [
-13
+16
 ],
 "context": "Kattribute",
-"id": 20,
+"id": 24,
 "objects": [
-"TR::classementTournoi",
-"TL::classementTournoi"
+"TL::classementTournoiBe"
 ],
 "parents": [
-11
+26
+]
+},
+{
+"attributes": {
+"Map-Int-Fr": "Map-Int-Fr",
+"classementTournoiFr": "classementTournoiFr"
+},
+"children": [
+16
+],
+"context": "Kattribute",
+"id": 23,
+"objects": [
+"TR::classementTournoi",
+"TL::classementTournoiFr"
+],
+"parents": [
+26
 ]
 },
 {
@@ -204,16 +274,16 @@
 "float": "float"
 },
 "children": [
-13
+16
 ],
 "context": "Kattribute",
-"id": 19,
+"id": 22,
 "objects": [
 "TR::cashPrice",
 "TL::cashPrice"
 ],
 "parents": [
-11
+27
 ]
 },
 {
@@ -221,16 +291,16 @@
 "annee": "annee"
 },
 "children": [
-13
+16
 ],
 "context": "Kattribute",
-"id": 18,
+"id": 21,
 "objects": [
 "TR::annee",
 "TL::annee"
 ],
 "parents": [
-21
+25
 ]
 },
 {
@@ -238,16 +308,16 @@
 "localisation": "localisation"
 },
 "children": [
-13
+16
 ],
 "context": "Kattribute",
-"id": 17,
+"id": 20,
 "objects": [
 "TR::localisation",
 "TL::localisation"
 ],
 "parents": [
-21
+25
 ]
 },
 {
@@ -255,16 +325,16 @@
 "name": "name"
 },
 "children": [
-13
+16
 ],
 "context": "Kattribute",
-"id": 16,
+"id": 19,
 "objects": [
 "TR::name",
 "TL::name"
 ],
 "parents": [
-21
+25
 ]
 },
 {
@@ -273,16 +343,16 @@
 "int": "int"
 },
 "children": [
-13
+16
 ],
 "context": "Kattribute",
-"id": 15,
+"id": 18,
 "objects": [
 "JF::classement",
 "JB::classement"
 ],
 "parents": [
-11
+27
 ]
 },
 {
@@ -290,16 +360,16 @@
 "age": "age"
 },
 "children": [
-13
+16
 ],
 "context": "Kattribute",
-"id": 14,
+"id": 17,
 "objects": [
 "JF::age",
 "JB::age"
 ],
 "parents": [
-21
+25
 ]
 },
 {
@@ -307,33 +377,34 @@
 "pseudo": "pseudo"
 },
 "children": [
-13
+16
 ],
 "context": "Kattribute",
-"id": 12,
+"id": 15,
 "objects": [
 "JF::pseudo",
 "JB::pseudo"
 ],
 "parents": [
-21
+25
 ]
 },
 {
 "attributes": {},
 "children": [],
 "context": "Kattribute",
-"id": 13,
+"id": 16,
 "objects": [],
 "parents": [
-12,
-14,
 15,
-16,
 17,
 18,
 19,
-20
+20,
+21,
+22,
+23,
+24
 ]
 },
 {
@@ -341,7 +412,7 @@
 "exist_hasTypeEnd": {
 "concepts": [
 1,
-30
+36
 ],
 "operator": "exist",
 "relation": "hasTypeEnd",
@@ -349,28 +420,37 @@
 }
 },
 "children": [
-23,
-25
+29,
+31
 ],
 "context": "Krole",
-"id": 22,
+"id": 28,
 "objects": [],
 "parents": []
 },
 {
 "attributes": {
+"exist_hasTypeEnd": {
+"concepts": [
+37
+],
+"operator": "exist",
+"relation": "hasTypeEnd",
+"target": "Kclass"
+},
 "tournoiLCS": "tournoiLCS"
 },
 "children": [
-24
+30
 ],
 "context": "Krole",
-"id": 25,
+"id": 31,
 "objects": [
-"JF::tournoiLCS"
+"JF::tournoiLCS",
+"JB::tournoiLCS"
 ],
 "parents": [
-22
+28
 ]
 },
 {
@@ -378,25 +458,24 @@
 "tournoiRLCS": "tournoiRLCS"
 },
 "children": [
-24
+30
 ],
 "context": "Krole",
-"id": 23,
+"id": 29,
 "objects": [
-"JF::tournoiRLCS",
-"JB::tournoiLCS"
+"JF::tournoiRLCS"
 ],
 "parents": [
-22
+28
 ]
 },
 {
 "attributes": {
 "exist_hasTypeEnd": {
 "concepts": [
-28,
-29,
-31
+34,
+35,
+38
 ],
 "operator": "exist",
 "relation": "hasTypeEnd",
@@ -405,11 +484,11 @@
 },
 "children": [],
 "context": "Krole",
-"id": 24,
+"id": 30,
 "objects": [],
 "parents": [
-23,
-25
+29,
+31
 ]
 },
 {
@@ -418,10 +497,10 @@
 "classementJoueur": "classementJoueur"
 },
 "children": [
-27
+33
 ],
 "context": "Koperation",
-"id": 26,
+"id": 32,
 "objects": [
 "JF::classement",
 "JB::classement"
@@ -434,13 +513,13 @@
 },
 "children": [],
 "context": "Koperation",
-"id": 27,
+"id": 33,
 "objects": [
 "TR::classement",
 "TL::classement"
 ],
 "parents": [
-26
+32
 ]
 }
 ]

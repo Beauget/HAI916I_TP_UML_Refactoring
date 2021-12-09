@@ -1,1 +1,1 @@
-Kattribute: step=2 nb.concepts=11 nb.attrib rel.=0
+Kattribute: step=2 nb.concepts=14 nb.attrib rel.=0

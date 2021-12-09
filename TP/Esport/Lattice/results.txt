@@ -1,16 +1,16 @@
 Kclass: step=1 nb.concepts=1 nb.attrib rel.=0
-Kattribute: step=1 nb.concepts=11 nb.attrib rel.=0
+Kattribute: step=1 nb.concepts=14 nb.attrib rel.=0
 Krole: step=1 nb.concepts=4 nb.attrib rel.=0
 Koperation: step=1 nb.concepts=2 nb.attrib rel.=0
-time:16 ms
-Kclass: step=2 nb.concepts=5 nb.attrib rel.=17
-Kattribute: step=2 nb.concepts=11 nb.attrib rel.=0
+time:23 ms
+Kclass: step=2 nb.concepts=6 nb.attrib rel.=20
+Kattribute: step=2 nb.concepts=14 nb.attrib rel.=0
 Krole: step=2 nb.concepts=4 nb.attrib rel.=1
 Koperation: step=2 nb.concepts=2 nb.attrib rel.=0
-time:6 ms
-Kclass: step=3 nb.concepts=5 nb.attrib rel.=17
-Kattribute: step=3 nb.concepts=11 nb.attrib rel.=0
-Krole: step=3 nb.concepts=4 nb.attrib rel.=5
+time:7 ms
+Kclass: step=3 nb.concepts=6 nb.attrib rel.=20
+Kattribute: step=3 nb.concepts=14 nb.attrib rel.=0
+Krole: step=3 nb.concepts=4 nb.attrib rel.=6
 Koperation: step=3 nb.concepts=2 nb.attrib rel.=0
-time:4 ms
-total time: 90
+time:7 ms
+total time: 124

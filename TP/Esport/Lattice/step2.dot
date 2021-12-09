@@ -2,63 +2,72 @@ digraph G {
 	rankdir=BT;
 subgraph Kclass { 
 label="Kclass";
-1 [shape=record,label="{Concept_Kclass_1|exist_hasAttribute(C_Kattribute_11)\nexist_hasAttribute(C_Kattribute_21)\nexist_hasOperation(C_Koperation_26)\n|}"];
-28 [shape=record,label="{Concept_Kclass_28|exist_hasAttribute(C_Kattribute_12)\nexist_hasAttribute(C_Kattribute_14)\nexist_hasAttribute(C_Kattribute_15)\nexist_hasRole(C_Krole_22)\nexist_hasRole(C_Krole_25)\n|JoueurBelge\n}"];
-29 [shape=record,label="{Concept_Kclass_29|exist_hasAttribute(C_Kattribute_13)\nexist_hasRole(C_Krole_24)\n|}"];
-30 [shape=record,label="{Concept_Kclass_30|exist_hasAttribute(C_Kattribute_16)\nexist_hasAttribute(C_Kattribute_17)\nexist_hasAttribute(C_Kattribute_18)\nexist_hasAttribute(C_Kattribute_19)\nexist_hasAttribute(C_Kattribute_20)\nexist_hasOperation(C_Koperation_27)\n|TournoiRLCS\nTournoiLCS\n}"];
-31 [shape=record,label="{Concept_Kclass_31|exist_hasRole(C_Krole_23)\n|JoueurFrançais\n}"];
-	28 -> 1
-	30 -> 1
-	31 -> 28
-	29 -> 30
-	29 -> 31
+1 [shape=record,label="{Concept_Kclass_1|exist_hasAttribute(C_Kattribute_14)\nexist_hasAttribute(C_Kattribute_25)\nexist_hasAttribute(C_Kattribute_27)\nexist_hasOperation(C_Koperation_32)\n|}"];
+34 [shape=record,label="{Concept_Kclass_34|exist_hasAttribute(C_Kattribute_15)\nexist_hasAttribute(C_Kattribute_17)\nexist_hasAttribute(C_Kattribute_18)\nexist_hasRole(C_Krole_28)\nexist_hasRole(C_Krole_31)\n|JoueurBelge\n}"];
+35 [shape=record,label="{Concept_Kclass_35|exist_hasAttribute(C_Kattribute_16)\nexist_hasRole(C_Krole_30)\n|}"];
+36 [shape=record,label="{Concept_Kclass_36|exist_hasAttribute(C_Kattribute_19)\nexist_hasAttribute(C_Kattribute_20)\nexist_hasAttribute(C_Kattribute_21)\nexist_hasAttribute(C_Kattribute_22)\nexist_hasAttribute(C_Kattribute_23)\nexist_hasAttribute(C_Kattribute_26)\nexist_hasOperation(C_Koperation_33)\n|TournoiRLCS\n}"];
+37 [shape=record,label="{Concept_Kclass_37|exist_hasAttribute(C_Kattribute_24)\n|TournoiLCS\n}"];
+38 [shape=record,label="{Concept_Kclass_38|exist_hasRole(C_Krole_29)\n|JoueurFrançais\n}"];
+	34 -> 1
+	36 -> 1
+	38 -> 34
+	37 -> 36
+	35 -> 37
+	35 -> 38
 }
 subgraph Kattribute { 
 label="Kattribute";
-11 [shape=record,label="{Concept_Kattribute_11||}"];
-12 [shape=record,label="{Concept_Kattribute_12|pseudo\n|JF::pseudo\nJB::pseudo\n}"];
-13 [shape=record,label="{Concept_Kattribute_13||}"];
-14 [shape=record,label="{Concept_Kattribute_14|age\n|JF::age\nJB::age\n}"];
-15 [shape=record,label="{Concept_Kattribute_15|classement\nint\n|JF::classement\nJB::classement\n}"];
-16 [shape=record,label="{Concept_Kattribute_16|name\n|TR::name\nTL::name\n}"];
-17 [shape=record,label="{Concept_Kattribute_17|localisation\n|TR::localisation\nTL::localisation\n}"];
-18 [shape=record,label="{Concept_Kattribute_18|annee\n|TR::annee\nTL::annee\n}"];
-19 [shape=record,label="{Concept_Kattribute_19|cashPrice\nfloat\n|TR::cashPrice\nTL::cashPrice\n}"];
-20 [shape=record,label="{Concept_Kattribute_20|classementTournoi\nMap<>\n|TR::classementTournoi\nTL::classementTournoi\n}"];
-21 [shape=record,label="{Concept_Kattribute_21|String\n|}"];
-	15 -> 11
-	19 -> 11
-	20 -> 11
-	21 -> 11
-	13 -> 12
-	13 -> 14
-	13 -> 15
-	13 -> 16
-	13 -> 17
-	13 -> 18
-	13 -> 19
-	13 -> 20
-	12 -> 21
-	14 -> 21
+14 [shape=record,label="{Concept_Kattribute_14||}"];
+15 [shape=record,label="{Concept_Kattribute_15|pseudo\n|JF::pseudo\nJB::pseudo\n}"];
+16 [shape=record,label="{Concept_Kattribute_16||}"];
+17 [shape=record,label="{Concept_Kattribute_17|age\n|JF::age\nJB::age\n}"];
+18 [shape=record,label="{Concept_Kattribute_18|classement\nint\n|JF::classement\nJB::classement\n}"];
+19 [shape=record,label="{Concept_Kattribute_19|name\n|TR::name\nTL::name\n}"];
+20 [shape=record,label="{Concept_Kattribute_20|localisation\n|TR::localisation\nTL::localisation\n}"];
+21 [shape=record,label="{Concept_Kattribute_21|annee\n|TR::annee\nTL::annee\n}"];
+22 [shape=record,label="{Concept_Kattribute_22|cashPrice\nfloat\n|TR::cashPrice\nTL::cashPrice\n}"];
+23 [shape=record,label="{Concept_Kattribute_23|classementTournoiFr\nMap-Int-Fr\n|TR::classementTournoi\nTL::classementTournoiFr\n}"];
+24 [shape=record,label="{Concept_Kattribute_24|classementTournoiBe\nMap-Int-Be\n|TL::classementTournoiBe\n}"];
+25 [shape=record,label="{Concept_Kattribute_25|String\n|}"];
+26 [shape=record,label="{Concept_Kattribute_26|Map-Int-Obj\n|}"];
+27 [shape=record,label="{Concept_Kattribute_27|number\n|}"];
+	25 -> 14
+	26 -> 14
+	27 -> 14
+	16 -> 15
+	16 -> 17
+	16 -> 18
+	16 -> 19
+	16 -> 20
 	16 -> 21
-	17 -> 21
-	18 -> 21
+	16 -> 22
+	16 -> 23
+	16 -> 24
+	15 -> 25
+	17 -> 25
+	19 -> 25
+	20 -> 25
+	21 -> 25
+	23 -> 26
+	24 -> 26
+	18 -> 27
+	22 -> 27
 }
 subgraph Krole { 
 label="Krole";
-22 [shape=record,label="{Concept_Krole_22|exist_hasTypeEnd(C_Kclass_1)\nexist_hasTypeEnd(C_Kclass_30)\n|}"];
-23 [shape=record,label="{Concept_Krole_23|tournoiRLCS\n|JF::tournoiRLCS\nJB::tournoiLCS\n}"];
-24 [shape=record,label="{Concept_Krole_24|exist_hasTypeEnd(C_Kclass_28)\nexist_hasTypeEnd(C_Kclass_29)\nexist_hasTypeEnd(C_Kclass_31)\n|}"];
-25 [shape=record,label="{Concept_Krole_25|tournoiLCS\n|JF::tournoiLCS\n}"];
-	23 -> 22
-	25 -> 22
-	24 -> 23
-	24 -> 25
+28 [shape=record,label="{Concept_Krole_28|exist_hasTypeEnd(C_Kclass_1)\nexist_hasTypeEnd(C_Kclass_36)\n|}"];
+29 [shape=record,label="{Concept_Krole_29|tournoiRLCS\n|JF::tournoiRLCS\n}"];
+30 [shape=record,label="{Concept_Krole_30|exist_hasTypeEnd(C_Kclass_34)\nexist_hasTypeEnd(C_Kclass_35)\nexist_hasTypeEnd(C_Kclass_38)\n|}"];
+31 [shape=record,label="{Concept_Krole_31|tournoiLCS\nexist_hasTypeEnd(C_Kclass_37)\n|JF::tournoiLCS\nJB::tournoiLCS\n}"];
+	29 -> 28
+	31 -> 28
+	30 -> 29
+	30 -> 31
 }
 subgraph Koperation { 
 label="Koperation";
-26 [shape=record,label="{Concept_Koperation_26|classement\nclassementJoueur\n|JF::classement\nJB::classement\n}"];
-27 [shape=record,label="{Concept_Koperation_27|classementTournoi\n|TR::classement\nTL::classement\n}"];
-	27 -> 26
+32 [shape=record,label="{Concept_Koperation_32|classement\nclassementJoueur\n|JF::classement\nJB::classement\n}"];
+33 [shape=record,label="{Concept_Koperation_33|classementTournoi\n|TR::classement\nTL::classement\n}"];
+	33 -> 32
 }
 }
